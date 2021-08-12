@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ボード</title>
 </head>
 <body>
-    <p>本文</p>
-    <p>Controller value<br>'message' = {{ $message }}</p>
-    <p>ViewComposer value<br>'view_message'={{ $view_message }}</p>
+    <table>
+        <tr><th>Data</th></tr>
+        @foreach ($items as $item)
+            <tr>
+                <td>{{ $item->getData() }}</td>
+            </tr>
+        @endforeach
+    </table>
 </body>
 </html>
