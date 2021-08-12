@@ -46,4 +46,9 @@ class HelloController extends Controller
 
         return view('index', compact('data'));
     }
+
+    public function toViewComposer()
+    {
+        return view('composer_index', ['message'=>'Hello!']);
+    }
 }

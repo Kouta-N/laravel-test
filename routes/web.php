@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('hello', 'HelloController@index');
 Route::get('toEach', 'HelloController@toEach');
+Route::get('toViewComposer', 'HelloController@toViewComposer');
