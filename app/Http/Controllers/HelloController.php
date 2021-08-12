@@ -35,4 +35,15 @@ class HelloController extends Controller
 
         return $response;
     }
+
+    public function toEach()
+    {
+        $data=[
+            ['name'=>'山田太郎','mail'=>'taro@yamada'],
+            ['name'=>'はなこ','mail'=>'hanako@yamada'],
+            ['name'=>'さちこ','mail'=>'satiko@yamada'],
+        ];
+
+        return view('index', compact('data'));
+    }
 }
